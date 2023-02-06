@@ -30,11 +30,6 @@ public class Ex02 {
 		 * riu, que està situat just a sota de la darrera fila.
 		 */
 
-		/*
-		 * Fes una funció anomenada esPodenPlantarBledesFila que donada la matriu i un
-		 * número de fila, retorni si es pot plantar tota la filera de bledes o no
-		 */
-
 		char[][] matriu = { { 'T', 'T', 'E', 'B' }, { 'T', '0', 'E', 'B' }, { '0', '0', '0', '0' },
 				{ 'E', 'T', 'E', 'T' } };
 
@@ -47,9 +42,14 @@ public class Ex02 {
 
 	}
 
+	/*
+	 * Fes una funció anomenada esPodenPlantarBledesFila que donada la matriu i un
+	 * número de fila, retorni si es pot plantar tota la filera de bledes o no
+	 */
+
 	public static boolean esPodenPlantarBledesFila(char[][] matriu, int numFila) {
 
-		// se recorre la fila y ++ a contador a cosas que no sean T o 0
+		// se recorre la fila
 		for (int col = 0; col < matriu[numFila].length; col++) {
 
 			// si no es T o 0 ya directamente devolvemos false
